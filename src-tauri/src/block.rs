@@ -2,7 +2,7 @@ use std::time::{SystemTime, UNIX_EPOCH};
 use serde::{Serialize, Deserialize};
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
-struct Block {
+pub struct Block {
     index: usize,
     timestamp: u64,
     data: String,

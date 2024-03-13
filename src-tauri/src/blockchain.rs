@@ -1,11 +1,13 @@
-struct Blockchain {
+
+mod block;
+pub struct Blockchain {
     //Vec<Block> is an array of blocks
     chain: Vec<Block>,
     difficulty: usize,
 }
 
 impl Blockchain {
-    fn new() -> Self {
+    pub fn new() -> Self {
         //makes a whole new blockchain
         let mut blockchain = Blockchain {
             chain: Vec::new(),
