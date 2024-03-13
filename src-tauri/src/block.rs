@@ -12,6 +12,7 @@ struct Block {
 }
  
 impl Block {
+    //constructor??
     fn new(index: usize, data: String, previous_hash: String) -> Self {
         //seconds seconds since unix epoch
         let timestamp = SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_secs();

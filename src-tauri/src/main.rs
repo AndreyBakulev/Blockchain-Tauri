@@ -5,4 +5,6 @@ fn main() {
   tauri::Builder::default()
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
+  println!("Hello Tauri!");
+  blockchain = Blockchain::new();   
 }
